@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhai+2&family=Lato:ital,wght@1,100&family=Nunito+Sans:ital,wght@1,200&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+
+<body>
+
+    <div id="nav">
+        <h1>To-Do Web Page</h1>
+    </div>
+    <div id="manage">
+        <div id="taskcontainer">
+            <input type="text" id="taskInput" placeholder="Task">
+            <textarea name="text" id="taskdescription" cols="20" rows="10" placeholder="Short Description"></textarea>
+            <button onclick="addTask()">Save</button>
+        </div>
+        <div id="lists">
+            <div class="pending-Task" id="pendingtask">
+                <h3>Pending Task</h3>
+                <ol id="pendingList"></ol>
+
+            </div>
+            <div class="completed-Tasks" id="completedtask">
+                <h3>Completed Task</h3>
+                <ol id="completedList"></ol>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
